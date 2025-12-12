@@ -17,10 +17,6 @@ jobs:
           distribution: temurin
           java-version: 17
 
-      - name: Grant execute permission
-        run: chmod +x gradlew
-        working-directory: app
-
       - name: Build debug APK
         run: ./gradlew assembleDebug
         working-directory: app
